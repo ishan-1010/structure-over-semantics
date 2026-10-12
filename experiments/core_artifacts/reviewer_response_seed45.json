@@ -1,0 +1,1052 @@
+{
+  "kmeans_bertlarge": {
+    "per_file_oracleK": {
+      "ARI": 0.0442,
+      "NMI": 0.6778,
+      "Homogeneity": 0.718,
+      "Completeness": 0.6418,
+      "V": 0.6778,
+      "Silhouette": null
+    },
+    "global_oracleK": {
+      "ARI": 0.0075,
+      "NMI": 0.6163,
+      "Homogeneity": 0.65,
+      "Completeness": 0.5859,
+      "V": 0.6163,
+      "Silhouette": null
+    },
+    "global_K_used": 961
+  },
+  "kmeans_tfidf": {
+    "per_file_oracleK": {
+      "ARI": 0.1194,
+      "NMI": 0.7036,
+      "Homogeneity": 0.6708,
+      "Completeness": 0.7398,
+      "V": 0.7036,
+      "Silhouette": null
+    },
+    "global_oracleK": {
+      "ARI": 0.0013,
+      "NMI": 0.5132,
+      "Homogeneity": 0.4527,
+      "Completeness": 0.5922,
+      "V": 0.5132,
+      "Silhouette": null
+    },
+    "global_K_used": 961
+  },
+  "constant_ALLedges": {
+    "node_classification_accuracy": 0.0442,
+    "per_file_oracleK": {
+      "ARI": 0.0626,
+      "NMI": 0.6969,
+      "Homogeneity": 0.7449,
+      "Completeness": 0.6547,
+      "V": 0.6969,
+      "Silhouette": -0.4697
+    },
+    "global_oracleK": {
+      "ARI": 0.0149,
+      "NMI": 0.645,
+      "Homogeneity": 0.6933,
+      "Completeness": 0.603,
+      "V": 0.645,
+      "Silhouette": 0.6021
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.0227
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.0224
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.033
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.0173
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.0211
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.0364
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.0212
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.0603
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.0411
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.0454
+      }
+    ]
+  },
+  "simple_ALLedges": {
+    "node_classification_accuracy": 0.0362,
+    "per_file_oracleK": {
+      "ARI": 0.4039,
+      "NMI": 0.8576,
+      "Homogeneity": 0.8903,
+      "Completeness": 0.8272,
+      "V": 0.8576,
+      "Silhouette": 0.3287
+    },
+    "global_oracleK": {
+      "ARI": 0.3756,
+      "NMI": 0.8469,
+      "Homogeneity": 0.8802,
+      "Completeness": 0.8159,
+      "V": 0.8469,
+      "Silhouette": 0.3479
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.3057
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.2923
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4011
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.366
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3325
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2254
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3905
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5535
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3408
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4672
+      }
+    ]
+  },
+  "bert_ALLedges": {
+    "node_classification_accuracy": 0.0126,
+    "per_file_oracleK": {
+      "ARI": 0.3952,
+      "NMI": 0.854,
+      "Homogeneity": 0.8816,
+      "Completeness": 0.8281,
+      "V": 0.854,
+      "Silhouette": 0.3762
+    },
+    "global_oracleK": {
+      "ARI": 0.391,
+      "NMI": 0.8447,
+      "Homogeneity": 0.8695,
+      "Completeness": 0.8212,
+      "V": 0.8447,
+      "Silhouette": 0.3209
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.2437
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.2076
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4612
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3772
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3476
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2139
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3679
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5217
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3358
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4653
+      }
+    ]
+  },
+  "combined_ALLedges": {
+    "node_classification_accuracy": 0.025,
+    "per_file_oracleK": {
+      "ARI": 0.4039,
+      "NMI": 0.8571,
+      "Homogeneity": 0.8828,
+      "Completeness": 0.8329,
+      "V": 0.8571,
+      "Silhouette": 0.4247
+    },
+    "global_oracleK": {
+      "ARI": 0.4034,
+      "NMI": 0.8504,
+      "Homogeneity": 0.8746,
+      "Completeness": 0.8275,
+      "V": 0.8504,
+      "Silhouette": 0.367
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.2452
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.2688
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4548
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3806
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.381
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2166
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3845
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5212
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3374
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4621
+      }
+    ]
+  },
+  "constant_NOreply": {
+    "node_classification_accuracy": 0.0442,
+    "per_file_oracleK": {
+      "ARI": 0.0813,
+      "NMI": 0.708,
+      "Homogeneity": 0.7533,
+      "Completeness": 0.6679,
+      "V": 0.708,
+      "Silhouette": -0.4247
+    },
+    "global_oracleK": {
+      "ARI": 0.0321,
+      "NMI": 0.6653,
+      "Homogeneity": 0.7128,
+      "Completeness": 0.6237,
+      "V": 0.6653,
+      "Silhouette": 0.6345
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.0497
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.0347
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.037
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.025
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.0239
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.0453
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.0429
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.0884
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.0558
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.0832
+      }
+    ]
+  },
+  "simple_NOreply": {
+    "node_classification_accuracy": 0.036,
+    "per_file_oracleK": {
+      "ARI": 0.4097,
+      "NMI": 0.8559,
+      "Homogeneity": 0.8822,
+      "Completeness": 0.8312,
+      "V": 0.8559,
+      "Silhouette": 0.4095
+    },
+    "global_oracleK": {
+      "ARI": 0.3824,
+      "NMI": 0.8443,
+      "Homogeneity": 0.8753,
+      "Completeness": 0.8154,
+      "V": 0.8443,
+      "Silhouette": 0.3883
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.3075
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.3403
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4592
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3457
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3728
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2161
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3793
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5132
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3366
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4646
+      }
+    ]
+  },
+  "bert_NOreply": {
+    "node_classification_accuracy": 0.0214,
+    "per_file_oracleK": {
+      "ARI": 0.401,
+      "NMI": 0.8537,
+      "Homogeneity": 0.8785,
+      "Completeness": 0.8303,
+      "V": 0.8537,
+      "Silhouette": 0.4252
+    },
+    "global_oracleK": {
+      "ARI": 0.4008,
+      "NMI": 0.8483,
+      "Homogeneity": 0.8674,
+      "Completeness": 0.8301,
+      "V": 0.8483,
+      "Silhouette": 0.421
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.2381
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.2698
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.449
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3718
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3831
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2135
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3867
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5206
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3357
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4525
+      }
+    ]
+  },
+  "combined_NOreply": {
+    "node_classification_accuracy": 0.0214,
+    "per_file_oracleK": {
+      "ARI": 0.3995,
+      "NMI": 0.8555,
+      "Homogeneity": 0.88,
+      "Completeness": 0.8323,
+      "V": 0.8555,
+      "Silhouette": 0.4594
+    },
+    "global_oracleK": {
+      "ARI": 0.3988,
+      "NMI": 0.8498,
+      "Homogeneity": 0.8726,
+      "Completeness": 0.8281,
+      "V": 0.8498,
+      "Silhouette": 0.4232
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.2499
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.2549
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4603
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3668
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3818
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2132
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3757
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5105
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3348
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4623
+      }
+    ]
+  },
+  "simple_replyonly": {
+    "node_classification_accuracy": 0.0276,
+    "per_file_oracleK": {
+      "ARI": 0.2719,
+      "NMI": 0.8698,
+      "Homogeneity": 0.9325,
+      "Completeness": 0.815,
+      "V": 0.8698,
+      "Silhouette": 0.1265
+    },
+    "global_oracleK": {
+      "ARI": 0.1704,
+      "NMI": 0.8255,
+      "Homogeneity": 0.8928,
+      "Completeness": 0.7676,
+      "V": 0.8255,
+      "Silhouette": 0.3107
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.2538
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.0923
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.3205
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3739
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.2818
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2941
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3454
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.245
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.1691
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.3114
+      }
+    ]
+  },
+  "simple_temporalonly": {
+    "node_classification_accuracy": 0.0316,
+    "per_file_oracleK": {
+      "ARI": 0.1251,
+      "NMI": 0.7778,
+      "Homogeneity": 0.8409,
+      "Completeness": 0.7236,
+      "V": 0.7778,
+      "Silhouette": 0.1535
+    },
+    "global_oracleK": {
+      "ARI": 0.0825,
+      "NMI": 0.7433,
+      "Homogeneity": 0.809,
+      "Completeness": 0.6874,
+      "V": 0.7433,
+      "Silhouette": 0.2428
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.0963
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.0271
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.0554
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.0847
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.0712
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.1929
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.1496
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.1758
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.0707
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.1911
+      }
+    ]
+  },
+  "simple_speakeronly": {
+    "node_classification_accuracy": 0.0352,
+    "per_file_oracleK": {
+      "ARI": 0.4279,
+      "NMI": 0.8634,
+      "Homogeneity": 0.8779,
+      "Completeness": 0.8493,
+      "V": 0.8634,
+      "Silhouette": 0.9031
+    },
+    "global_oracleK": {
+      "ARI": 0.4287,
+      "NMI": 0.8655,
+      "Homogeneity": 0.8818,
+      "Completeness": 0.8498,
+      "V": 0.8655,
+      "Silhouette": 0.9188
+    },
+    "global_K_used": 961,
+    "per_file_detail": [
+      {
+        "file": "2005-07-06_14",
+        "n": 500,
+        "K": 155,
+        "speaker_repetition": 4.672897196261682,
+        "ARI": 0.3071
+      },
+      {
+        "file": "2007-01-11_12",
+        "n": 500,
+        "K": 183,
+        "speaker_repetition": 3.90625,
+        "ARI": 0.4395
+      },
+      {
+        "file": "2007-12-01_03",
+        "n": 500,
+        "K": 64,
+        "speaker_repetition": 7.6923076923076925,
+        "ARI": 0.4647
+      },
+      {
+        "file": "2008-07-14_18",
+        "n": 500,
+        "K": 82,
+        "speaker_repetition": 6.024096385542169,
+        "ARI": 0.3933
+      },
+      {
+        "file": "2010-08-17_18",
+        "n": 500,
+        "K": 93,
+        "speaker_repetition": 4.8076923076923075,
+        "ARI": 0.3876
+      },
+      {
+        "file": "2013-09-01_02",
+        "n": 500,
+        "K": 63,
+        "speaker_repetition": 7.575757575757576,
+        "ARI": 0.2175
+      },
+      {
+        "file": "2014-06-18_13",
+        "n": 500,
+        "K": 77,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.3953
+      },
+      {
+        "file": "2015-03-18_05",
+        "n": 500,
+        "K": 85,
+        "speaker_repetition": 6.097560975609756,
+        "ARI": 0.5243
+      },
+      {
+        "file": "2016-02-22_17",
+        "n": 500,
+        "K": 54,
+        "speaker_repetition": 6.944444444444445,
+        "ARI": 0.3357
+      },
+      {
+        "file": "2016-06-08_07",
+        "n": 500,
+        "K": 105,
+        "speaker_repetition": 4.587155963302752,
+        "ARI": 0.4694
+      }
+    ]
+  }
+}

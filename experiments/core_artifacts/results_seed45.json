@@ -1,0 +1,120 @@
+{
+  "kmeans_bert_large_oracleK": {
+    "ARI": 0.0075,
+    "NMI": 0.6163,
+    "Homogeneity": 0.65,
+    "Completeness": 0.5859,
+    "V": 0.6163,
+    "Silhouette": 0.0637
+  },
+  "kmeans_bert_base_oracleK": {
+    "ARI": 0.0138,
+    "NMI": 0.6271,
+    "Homogeneity": 0.661,
+    "Completeness": 0.5965,
+    "V": 0.6271,
+    "Silhouette": 0.0607
+  },
+  "kmeans_tfidf_oracleK": {
+    "ARI": 0.0013,
+    "NMI": 0.5132,
+    "Homogeneity": 0.4527,
+    "Completeness": 0.5922,
+    "V": 0.5132,
+    "Silhouette": null
+  },
+  "hybrid_gcn_bert_WITH_gold_reply_edges": {
+    "node_classification_accuracy": 0.029,
+    "cluster_hidden_oracleK": {
+      "ARI": 0.3613,
+      "NMI": 0.8351,
+      "Homogeneity": 0.8694,
+      "Completeness": 0.8034,
+      "V": 0.8351,
+      "Silhouette": 0.2921
+    },
+    "cluster_argmax": {
+      "ARI": 0.2302,
+      "NMI": 0.7057,
+      "Homogeneity": 0.6069,
+      "Completeness": 0.8428,
+      "V": 0.7057,
+      "Silhouette": -0.0847
+    }
+  },
+  "hybrid_gcn_bert_NO_reply_edges": {
+    "node_classification_accuracy": 0.0196,
+    "cluster_hidden_oracleK": {
+      "ARI": 0.3601,
+      "NMI": 0.8314,
+      "Homogeneity": 0.8639,
+      "Completeness": 0.8013,
+      "V": 0.8314,
+      "Silhouette": 0.311
+    },
+    "cluster_argmax": {
+      "ARI": 0.2881,
+      "NMI": 0.7331,
+      "Homogeneity": 0.6633,
+      "Completeness": 0.8194,
+      "V": 0.7331,
+      "Silhouette": -0.0279
+    }
+  },
+  "gnn_simple_features_WITH_gold_reply_edges": {
+    "node_classification_accuracy": 0.0144,
+    "cluster_hidden_oracleK": {
+      "ARI": 0.4172,
+      "NMI": 0.8609,
+      "Homogeneity": 0.887,
+      "Completeness": 0.8362,
+      "V": 0.8609,
+      "Silhouette": 0.3337
+    },
+    "cluster_argmax": {
+      "ARI": 0.2883,
+      "NMI": 0.753,
+      "Homogeneity": 0.6897,
+      "Completeness": 0.8291,
+      "V": 0.753,
+      "Silhouette": -0.1352
+    }
+  },
+  "siamese_bert_large": {
+    "link_accuracy": 0.7709,
+    "link_recall": 0.9364,
+    "link_roc_auc": 0.8457,
+    "confusion": {
+      "tp": 9364,
+      "fp": 3947,
+      "fn": 636,
+      "tn": 6053
+    },
+    "thread_reconstruction_connected_components": {
+      "ARI": 0.1447,
+      "NMI": 0.6541,
+      "Homogeneity": 0.4859,
+      "Completeness": 1.0,
+      "V": 0.6541,
+      "Silhouette": null
+    }
+  },
+  "triplet_bert_base": {
+    "full_test_oracleK": {
+      "ARI": 0.0137,
+      "NMI": 0.6372,
+      "Homogeneity": 0.6775,
+      "Completeness": 0.6014,
+      "V": 0.6372,
+      "Silhouette": 0.0559
+    },
+    "sample_1000_oracleK": {
+      "ARI": 0.0156,
+      "NMI": 0.753,
+      "Homogeneity": 0.764,
+      "Completeness": 0.7424,
+      "V": 0.753,
+      "Silhouette": 0.0362
+    }
+  }
+}
