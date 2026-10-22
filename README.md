@@ -5,27 +5,35 @@ Multi-Party Conversation Disentanglement"**, Ishan Katoch, ROCLING 2026 (paper 4
 
 ## The finding
 
-On the IRC Disentanglement Corpus under per-file oracle *K*, grouping messages by author
-scores **0.4287 ARI** with no model at all. The best GCN here scores 0.4287 as well, to four
-decimals, because a graph whose only edges are speaker-continuity links decomposes into
-exactly one connected component per author. The model re-derives the baseline rather than
-beating it.
+On the IRC Disentanglement Corpus, grouping messages by author within each file scores
+**0.4287 ARI** with no model at all, and nothing trained here beats it. With
+speaker-continuity edges only, each author's messages in a file form a clique, so the GCN
+gives them one shared representation and K-Means can separate authors but never split one
+author's messages. Under global oracle *K* this model scores 0.4287 ± 0.0000 on all five
+seeds, equal to the author baseline to four decimals. That is consistent with it reproducing
+the author grouping, but the cluster assignments were not saved, so identical assignments are
+not established. Under per-file oracle *K*, where *K* need not equal the number of authors,
+it scores 0.4278 ± 0.0004.
 
-| Configuration | ARI (per-file oracle *K*) |
-|---|---|
-| Group by author, no model | 0.4287 |
-| GCN, speaker edges only | 0.4287 ± 0.0000 |
-| GCN, handcrafted + frozen BERT-large | 0.402 ± 0.003 |
-| GCN, handcrafted features | 0.401 ± 0.003 |
-| GCN, frozen BERT-large [CLS] | 0.400 ± 0.003 |
-| GCN, constant node features | 0.062 |
+| Configuration | ARI, per-file oracle *K* | ARI, global oracle *K* |
+|---|---|---|
+| Group by author within each file, no model (needs no *K*) | 0.4287 | 0.4287 |
+| GCN, speaker edges only | 0.4278 ± 0.0004 | 0.4287 ± 0.0000 |
+| GCN, handcrafted + frozen BERT-large | 0.402 ± 0.002 | 0.402 ± 0.001 |
+| GCN, handcrafted features | 0.401 ± 0.003 | 0.377 ± 0.005 |
+| GCN, frozen BERT-large [CLS] | 0.400 ± 0.003 | 0.392 ± 0.005 |
+| GCN, constant node features | 0.062 ± 0.000 | 0.015 ± 0.000 |
 
-Edge ablation, handcrafted features held fixed: speaker continuity 0.4287, gold reply-to
-0.275, temporal adjacency 0.125, all three together 0.401.
+Mean ± sample SD over seeds 42–46. Feature rows use reply-to, adjacency and speaker edges.
+Grouping by author across files instead of within them gives 0.4163.
 
-Handcrafted and frozen BERT-large differ by 0.0017 (paired *t*-test over five seeds,
-p = 0.40). That is a null result at low power, not demonstrated equivalence. Under the
-global oracle-*K* protocol the gap is larger and favours BERT (0.377 vs 0.392).
+Edge ablation, handcrafted features held fixed, per-file oracle *K*: speaker continuity
+0.428, gold reply-to 0.275, temporal adjacency 0.125, all three together 0.401.
+
+Under per-file *K*, handcrafted and frozen BERT-large differ by 0.0017 (paired *t*-test over
+five seeds, p = 0.40). That is a null result at low power, not demonstrated equivalence.
+Under global oracle *K* the gap is larger and favours BERT (0.392 vs 0.377); the paper does
+not test it for significance.
 
 ## Corpus
 
